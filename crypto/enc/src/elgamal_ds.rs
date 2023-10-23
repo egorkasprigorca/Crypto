@@ -42,11 +42,6 @@ fn sign(message: &[u8], p: &BigUint, g: &BigUint, x: &BigUint) -> (BigUint, BigU
     let b = x*&r - &h;
     let u = (p - BigUint::one()) - (b % (p - BigUint::one()));
 
-    // let k_inv = num_bigint::algorithms::mod_inverse(
-    //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*k.to_bytes_le())),
-    //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*(p - BigUint::one()).to_bytes_le()))
-    // ).unwrap();
-    // let k_inv = num_primes::BigUint::from_bytes_le(&*k_inv.to_bytes_le().1);
     let k_inv = num_inv_by_mod(&k, &(p - BigUint::one()));
     let s = &k_inv * &u % (p - BigUint::one());
     (r, s)

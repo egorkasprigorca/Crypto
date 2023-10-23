@@ -48,11 +48,6 @@ fn sign(message: &[u8], a: &BigUint, p: &BigUint, q: &BigUint, x: &BigUint) -> (
             continue
         }
         // diff between ru and us here
-        // let k_inv_mod_q = num_bigint::algorithms::mod_inverse(
-        //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*k.to_bytes_le())),
-        //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*q.to_bytes_le()))
-        // ).unwrap();
-        // let k_inv_mod_q = num_primes::BigUint::from_bytes_le(&*k_inv_mod_q.to_bytes_le().1);
         let k_inv_mod_q = num_inv_by_mod(&k, q);
 
         let s = k_inv_mod_q * ((&h + x*&r) % q);

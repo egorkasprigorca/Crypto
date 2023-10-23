@@ -64,11 +64,6 @@ fn verify(message: &[u8], r: &BigUint, s: &BigUint, p: &BigUint, q: &BigUint, a:
     let h = hasher.finalize();
     let h = BigUint::from_bytes_le(&h);
 
-    // let h_inv_mod_q = num_bigint::algorithms::mod_inverse(
-    //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*h.to_bytes_le())),
-    //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*q.to_bytes_le()))
-    // ).unwrap();
-    // let h_inv_mod_q = num_primes::BigUint::from_bytes_le(&*h_inv_mod_q.to_bytes_le().1);
     let h_inv_mod_q = num_inv_by_mod(&h, q);
 
     let u1 = s * &h_inv_mod_q;
