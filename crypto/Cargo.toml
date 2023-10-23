@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "enc",
+    "lab3"
+]
