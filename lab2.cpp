@@ -6,6 +6,8 @@
 #include "ELGamal.h"
 #include "Vernam.h"
 
+const std::string dir = "C:/Users/Егор/Documents/Github/Crypto/data/";
+
 void doShamir() {
     srand(time(NULL));
     int64_t cA, cB, dA, dB, p;
@@ -16,11 +18,11 @@ void doShamir() {
     Shamir::secret_key(&cB, &dB, p);
 
     Shamir::encode(cA, cB, dA, p,
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/logo.jpg",
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_shamir");
+                   dir + "logo.jpg",
+                   dir + "coded_logo_shamir");
     Shamir::decode(dB, p,
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_shamir",
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/out_logo_shamir.jpg");
+                   dir + "coded_logo_shamir",
+                   dir + "out_logo_shamir");
 }
 
 void doELGamal() {
@@ -38,20 +40,20 @@ void doELGamal() {
     }
 
     r = ELGamal::encode(p, g, k, cB,
-                        "C:/Users/egor/Desktop/Projects/Crypto/data/logo.jpg",
-                        "C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_elgamal");
+                        dir + "logo.jpg",
+                        dir + "coded_logo_elgamal");
     ELGamal::decode(p, r, cB,
-                    "C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_elgamal",
-                    "C:/Users/egor/Desktop/Projects/Crypto/data/out_logo_elgamal.jpg");
+                    dir + "coded_logo_elgamal",
+                    dir + "out_logo_elgamal.jpg");
 }
 
 void doVernam() {
-    Vernam::encode("C:/Users/egor/Desktop/Projects/Crypto/data/logo.jpg",
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_vernam",
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/vernam_key");
-    Vernam::decode("C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_vernam",
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/vernam_key",
-                   "C:/Users/egor/Desktop/Projects/Crypto/data/out_logo_vernam.jpg");
+    Vernam::encode(dir + "logo.jpg",
+                   dir + "coded_logo_vernam",
+                   dir + "vernam_key");
+    Vernam::decode(dir + "coded_logo_vernam",
+                   dir + "vernam_key",
+                   dir + "out_logo_vernam.jpg");
 }
 
 void doRSA() {
@@ -89,11 +91,11 @@ void doRSA() {
     }
 
     RSA::encode(Db, Nb,
-                "C:/Users/egor/Desktop/Projects/Crypto/data/logo.jpg",
-                "C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_rsa");
+                dir + "logo.jpg",
+                dir + "coded_logo_rsa");
     RSA::decode(Cb, Nb,
-                "C:/Users/egor/Desktop/Projects/Crypto/data/coded_logo_rsa",
-                "C:/Users/egor/Desktop/Projects/Crypto/data/out_logo.jpg");
+                dir + "coded_logo_rsa",
+                dir + "out_logo_rsa.jpg");
 //    int64_t x, y, min = 0;
 //    gcd_ext(fi, d, &x, &y);
 //    x = std::abs(x);

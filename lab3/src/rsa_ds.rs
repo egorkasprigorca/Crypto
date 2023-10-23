@@ -2,9 +2,9 @@ use std::{borrow::Cow, path::Path, fs};
 
 use num::One;
 use num_primes::{Generator, BigUint};
-use sha2::{Digest, Sha256, Sha512};
+use sha2::{Digest, Sha512};
 
-use crate::util::gcd;
+use crate::util::{gcd, num_inv_by_mod};
 
 extern crate num_bigint_dig as num_bigint;
 
@@ -15,18 +15,19 @@ pub fn init(bits: usize) -> (BigUint, BigUint, BigUint) {
 
     let fi = (&p - BigUint::one()) * (&q - BigUint::one());
 
-    let mut d;
-    loop {
-        d = Generator::new_uint(bits);
+    let d = loop {
+        let d = Generator::new_uint(bits);
         if gcd(&fi, &d) == BigUint::one() {
-            break;
+            break d;
         }
-    }
-    let c = num_bigint::algorithms::mod_inverse(
-        Cow::Owned(num_bigint::BigUint::from_bytes_le(&*d.to_bytes_le())),
-        Cow::Owned(num_bigint::BigUint::from_bytes_le(&*fi.to_bytes_le()))
-    ).unwrap();
-    let c = num_primes::BigUint::from_bytes_le(&*c.to_bytes_le().1);
+    };
+
+    // let c = num_bigint::algorithms::mod_inverse(
+    //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*d.to_bytes_le())),
+    //     Cow::Owned(num_bigint::BigUint::from_bytes_le(&*fi.to_bytes_le()))
+    // ).unwrap();
+    // let c = num_primes::BigUint::from_bytes_le(&*c.to_bytes_le().1);
+    let c = num_inv_by_mod(&d, &fi);
 
     (c, d, n)
 }
@@ -52,7 +53,7 @@ pub fn sign_file<P: AsRef<Path>>(path: P, sign_file_path: P, c: &BigUint, n: &Bi
     let binding = fs::read(path).unwrap();
     let msg_bytes = binding.as_slice();
     let s = sign(msg_bytes, c, n);
-    fs::remove_file(&sign_file_path).unwrap();
+    fs::File::create(&sign_file_path).unwrap();
     fs::write(sign_file_path, s.to_bytes_le()).unwrap();
 }
 

@@ -1,3 +1,0 @@
-C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/Crypto.dir
-C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/rebuild_cache.dir

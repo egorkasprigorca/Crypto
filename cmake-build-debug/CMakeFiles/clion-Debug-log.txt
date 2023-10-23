@@ -1,4 +1,38 @@
-"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" "-DCMAKE_C_COMPILER=C:/Program Files/LLVM/bin/clang-cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/LLVM/bin/clang-cl.exe" -G Ninja -S C:\Users\egor\Desktop\Projects\Crypto -B C:\Users\egor\Desktop\Projects\Crypto\cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_C_COMPILER=C:/Program Files/LLVM/bin/clang-cl.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/LLVM/bin/clang-cl.exe" -G "CodeBlocks - NMake Makefiles" -S C:\Users\Егор\Documents\GitHub\Crypto -B C:\Users\Егор\Documents\GitHub\Crypto\cmake-build-debug
+-- The C compiler identification is Clang 17.0.1 with MSVC-like command-line
+-- The CXX compiler identification is Clang 17.0.1 with MSVC-like command-line
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe
+-- Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "C:/Program Files/LLVM/bin/clang-cl.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-99mx9f
+    
+    Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_6cfc1\fast && 	"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_6cfc1.dir\build.make /nologo -L                  CMakeFiles\cmTC_6cfc1.dir\build
+    Building C object CMakeFiles/cmTC_6cfc1.dir/testCCompiler.c.obj
+    	C:\PROGRA~1\LLVM\bin\clang-cl.exe @C:\Users\A946~1\AppData\Local\Temp\nmA2EA.tmp
+    clang-cl: error: no such file or directory: 'C:\Users\<C5><E3><EE><F0>\Documents\GitHub\Crypto\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-99mx9f\testCCompiler.c'
+    clang-cl: error: no input files
+    NMAKE : fatal error U1077: C:\PROGRA~1\LLVM\bin\clang-cl.exe @C:\Users\A946~1\AppData\Local\Temp\nmA2EA.tmp : тючтЁр∙хээ√щ ъюф "0x1"
+    Stop.
+    NMAKE : fatal error U1077: "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_6cfc1.dir\build.make /nologo -L                  CMakeFiles\cmTC_6cfc1.dir\build : тючтЁр∙хээ√щ ъюф "0x2"
+    Stop.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!

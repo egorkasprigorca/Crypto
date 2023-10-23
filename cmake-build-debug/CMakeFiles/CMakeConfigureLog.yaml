@@ -28,7 +28,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
       
       The C compiler identification is Clang, found in:
-        C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
@@ -62,7 +62,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
       
       The CXX compiler identification is Clang, found in:
-        C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
       
   -
     kind: "message-v1"
@@ -85,8 +85,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8usk9w"
-      binary: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8usk9w"
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jzpcec"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jzpcec"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -95,91 +95,493 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8usk9w
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jzpcec
         
-        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_b8ac4 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_b8ac4.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_b8ac4.dir\\ -c -- "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCCompilerABI.c"
-        [2/2] cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b8ac4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_b8ac4.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_b8ac4.exe /implib:cmTC_b8ac4.lib /pdb:cmTC_b8ac4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console   && cd ."
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_51a61\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_51a61.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_51a61.dir\\build
+        Building C object CMakeFiles/cmTC_51a61.dir/CMakeCCompilerABI.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7AAD.tmp
+        Linking C executable cmTC_51a61.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_51a61.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_51a61.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7B0B.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_51a61.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_51a61.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_51a61.dir/manifest.res CMakeFiles\\cmTC_51a61.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_51a61.dir\\objects1.rsp /out:cmTC_51a61.exe /implib:cmTC_51a61.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-jzpcec\\cmTC_51a61.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_51a61.dir/intermediate.manifest CMakeFiles\\cmTC_51a61.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_51a61.dir\\objects1.rsp /out:cmTC_51a61.exe /implib:cmTC_51a61.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-jzpcec\\cmTC_51a61.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_51a61.dir/intermediate.manifest CMakeFiles\\cmTC_51a61.dir/manifest.res" failed (exit code 1) with the following output:
+        lld-link: error: no such file or directory
+        lld-link: error: failed to write PDB file C:\\Users\\я┐╜я┐╜я┐╜я┐╜\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-jzpcec\\cmTC_51a61.pdb
+        NMAKE : fatal error U1077: "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_51a61.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_51a61.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7B0B.tmp : тючтЁр∙хээ√щ ъюф "0xffffffff"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_51a61.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_51a61.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
         
-      exitCode: 0
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe"
+    directories:
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vuorjp"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vuorjp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vuorjp
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b0cfd\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_b0cfd.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b0cfd.dir\\build
+        Building C object CMakeFiles/cmTC_b0cfd.dir/testCCompiler.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7C62.tmp
+        clang-cl: error: no such file or directory: 'C:\\Users\\<C5><E3><EE><F0>\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-vuorjp\\testCCompiler.c'
+        clang-cl: error: no input files
+        NMAKE : fatal error U1077: C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7C62.tmp : тючтЁр∙хээ√щ ъюф "0x1"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_b0cfd.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b0cfd.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
   -
     kind: "try_compile-v1"
     backtrace:
       - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
-      - "Detecting CXX compiler ABI info"
+      - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-asx343"
-      binary: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-asx343"
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r3f4sl"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r3f4sl"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
-      variable: "CMAKE_CXX_ABI_COMPILED"
+      variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-asx343
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-r3f4sl
         
-        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_c7396 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_c7396.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_c7396.dir\\ -c -- "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c7396.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_c7396.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_c7396.exe /implib:cmTC_c7396.lib /pdb:cmTC_c7396.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console   && cd ."
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_31018\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_31018.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_31018.dir\\build
+        Building C object CMakeFiles/cmTC_31018.dir/CMakeCCompilerABI.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm55FF.tmp
+        Linking C executable cmTC_31018.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_31018.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_31018.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm562F.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_31018.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_31018.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_31018.dir/manifest.res CMakeFiles\\cmTC_31018.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_31018.dir\\objects1.rsp /out:cmTC_31018.exe /implib:cmTC_31018.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-r3f4sl\\cmTC_31018.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_31018.dir/intermediate.manifest CMakeFiles\\cmTC_31018.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_31018.dir\\objects1.rsp /out:cmTC_31018.exe /implib:cmTC_31018.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-r3f4sl\\cmTC_31018.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_31018.dir/intermediate.manifest CMakeFiles\\cmTC_31018.dir/manifest.res" failed (exit code 1) with the following output:
+        lld-link: error: no such file or directory
+        lld-link: error: failed to write PDB file C:\\Users\\я┐╜я┐╜я┐╜я┐╜\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-r3f4sl\\cmTC_31018.pdb
+        NMAKE : fatal error U1077: "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_31018.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_31018.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm562F.tmp : тючтЁр∙хээ√щ ъюф "0xffffffff"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_31018.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_31018.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
         
-      exitCode: 0
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake:121 (_record_compiler_features_cxx)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
       - "CMakeLists.txt:2 (project)"
     checks:
-      - "Detecting CXX compile features"
+      - "Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe"
     directories:
-      source: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qo487j"
-      binary: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qo487j"
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8xirft"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8xirft"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
-      variable: "CMAKE_CXX_FEATURE_TEST"
+      variable: "CMAKE_C_COMPILER_WORKS"
       cached: true
       stdout: |
-        Change Dir: C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qo487j
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8xirft
         
-        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_c082c && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi   -std:c++14 /showIncludes /FoCMakeFiles\\cmTC_c082c.dir\\feature_tests.cxx.obj /FdCMakeFiles\\cmTC_c082c.dir\\ -c -- C:\\Users\\egor\\Desktop\\Projects\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-qo487j\\feature_tests.cxx
-        [2/2] cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c082c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_c082c.dir\\feature_tests.cxx.obj  /out:cmTC_c082c.exe /implib:cmTC_c082c.lib /pdb:cmTC_c082c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b032b\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_b032b.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b032b.dir\\build
+        Building C object CMakeFiles/cmTC_b032b.dir/testCCompiler.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm5728.tmp
+        clang-cl: error: no such file or directory: 'C:\\Users\\<C5><E3><EE><F0>\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-8xirft\\testCCompiler.c'
+        clang-cl: error: no input files
+        NMAKE : fatal error U1077: C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm5728.tmp : тючтЁр∙хээ√щ ъюф "0x1"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_b032b.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b032b.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
         
-      exitCode: 0
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake:129 (_record_compiler_features_cxx)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
-      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:2 (project)"
     checks:
-      - "Detecting CXX compile features"
+      - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k6l12w"
-      binary: "C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k6l12w"
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-c35x0p"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-c35x0p"
     cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
     buildResult:
-      variable: "CMAKE_CXX_FEATURE_TEST"
+      variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: C:/Users/egor/Desktop/Projects/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k6l12w
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-c35x0p
         
-        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe -v cmTC_056fe && [1/2] C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP   /DWIN32 /D_WINDOWS /EHsc  /Ob0 /Od /RTC1 -MDd -Zi /showIncludes /FoCMakeFiles\\cmTC_056fe.dir\\feature_tests.cxx.obj /FdCMakeFiles\\cmTC_056fe.dir\\ -c -- C:\\Users\\egor\\Desktop\\Projects\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-k6l12w\\feature_tests.cxx
-        [2/2] cmd.exe /C "cd . && "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_056fe.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo CMakeFiles\\cmTC_056fe.dir\\feature_tests.cxx.obj  /out:cmTC_056fe.exe /implib:cmTC_056fe.lib /pdb:cmTC_056fe.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_ffeee\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_ffeee.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ffeee.dir\\build
+        Building C object CMakeFiles/cmTC_ffeee.dir/CMakeCCompilerABI.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7B6B.tmp
+        Linking C executable cmTC_ffeee.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ffeee.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_ffeee.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7BBA.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_ffeee.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_ffeee.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_ffeee.dir/manifest.res CMakeFiles\\cmTC_ffeee.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_ffeee.dir\\objects1.rsp /out:cmTC_ffeee.exe /implib:cmTC_ffeee.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-c35x0p\\cmTC_ffeee.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ffeee.dir/intermediate.manifest CMakeFiles\\cmTC_ffeee.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_ffeee.dir\\objects1.rsp /out:cmTC_ffeee.exe /implib:cmTC_ffeee.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-c35x0p\\cmTC_ffeee.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_ffeee.dir/intermediate.manifest CMakeFiles\\cmTC_ffeee.dir/manifest.res" failed (exit code 1) with the following output:
+        lld-link: error: no such file or directory
+        lld-link: error: failed to write PDB file C:\\Users\\я┐╜я┐╜я┐╜я┐╜\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-c35x0p\\cmTC_ffeee.pdb
+        NMAKE : fatal error U1077: "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ffeee.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_ffeee.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7BBA.tmp : тючтЁр∙хээ√щ ъюф "0xffffffff"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_ffeee.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_ffeee.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
         
-      exitCode: 0
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe"
+    directories:
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k8ozp8"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k8ozp8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-k8ozp8
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_eb274\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_eb274.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_eb274.dir\\build
+        Building C object CMakeFiles/cmTC_eb274.dir/testCCompiler.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7CB3.tmp
+        clang-cl: error: no such file or directory: 'C:\\Users\\<C5><E3><EE><F0>\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-k8ozp8\\testCCompiler.c'
+        clang-cl: error: no input files
+        NMAKE : fatal error U1077: C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nm7CB3.tmp : тючтЁр∙хээ√щ ъюф "0x1"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_eb274.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_eb274.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
+      Build flags: /DWIN32;/D_WINDOWS
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+      
+      The C compiler identification is Clang, found in:
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting C compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang-cl.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        Note: including file: ./foo.h
+        
+      Found prefix "Note: including file: "
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-p2vhd1"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-p2vhd1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-p2vhd1
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_501cf\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_501cf.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_501cf.dir\\build
+        Building C object CMakeFiles/cmTC_501cf.dir/CMakeCCompilerABI.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nmA192.tmp
+        Linking C executable cmTC_501cf.exe
+        	"C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_501cf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_501cf.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nmA1C2.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_501cf.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_501cf.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_501cf.dir/manifest.res CMakeFiles\\cmTC_501cf.dir/manifest.rc
+        LINK Pass 1:
+        C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_501cf.dir\\objects1.rsp /out:cmTC_501cf.exe /implib:cmTC_501cf.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-p2vhd1\\cmTC_501cf.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_501cf.dir/intermediate.manifest CMakeFiles\\cmTC_501cf.dir/manifest.res
+        LINK Pass 1: command "C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_501cf.dir\\objects1.rsp /out:cmTC_501cf.exe /implib:cmTC_501cf.lib /pdb:C:\\Users\\????\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-p2vhd1\\cmTC_501cf.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_501cf.dir/intermediate.manifest CMakeFiles\\cmTC_501cf.dir/manifest.res" failed (exit code 1) with the following output:
+        lld-link: error: no such file or directory
+        lld-link: error: failed to write PDB file C:\\Users\\я┐╜я┐╜я┐╜я┐╜\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-p2vhd1\\cmTC_501cf.pdb
+        NMAKE : fatal error U1077: "C:\\Program Files\\JetBrains\\CLion 2023.2.2\\bin\\cmake\\win\\x64\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_501cf.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- C:\\PROGRA~1\\LLVM\\bin\\lld-link.exe /nologo @CMakeFiles\\cmTC_501cf.dir\\objects1.rsp @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nmA1C2.tmp : тючтЁр∙хээ√щ ъюф "0xffffffff"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_501cf.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_501cf.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Program Files/LLVM/bin/clang-cl.exe"
+    directories:
+      source: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-99mx9f"
+      binary: "C:/Users/\u0415\u0433\u043e\u0440/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-99mx9f"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Егор/Documents/GitHub/Crypto/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-99mx9f
+        
+        Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_6cfc1\\fast && 	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_6cfc1.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_6cfc1.dir\\build
+        Building C object CMakeFiles/cmTC_6cfc1.dir/testCCompiler.c.obj
+        	C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nmA2EA.tmp
+        clang-cl: error: no such file or directory: 'C:\\Users\\<C5><E3><EE><F0>\\Documents\\GitHub\\Crypto\\cmake-build-debug\\CMakeFiles\\CMakeScratch\\TryCompile-99mx9f\\testCCompiler.c'
+        clang-cl: error: no input files
+        NMAKE : fatal error U1077: C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe @C:\\Users\\A946~1\\AppData\\Local\\Temp\\nmA2EA.tmp : тючтЁр∙хээ√щ ъюф "0x1"
+        Stop.
+        NMAKE : fatal error U1077: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_6cfc1.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_6cfc1.dir\\build : тючтЁр∙хээ√щ ъюф "0x2"
+        Stop.
+        
+      exitCode: 2
 ...

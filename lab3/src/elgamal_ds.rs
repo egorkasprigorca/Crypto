@@ -12,14 +12,13 @@ pub fn init(bits: usize) -> (BigUint, BigUint, BigUint, BigUint) {
     let p = Generator::new_prime(bits);
     let g = Generator::new_prime(bits);
 
-    let mut x;
-    loop {
+    let x = loop {
         // Alice's private key
-        x = Generator::new_uint(bits);
+        let x = Generator::new_uint(bits);
         if x > BigUint::one() && x < &p - BigUint::one() {
-            break;
+            break x;
         }
-    }
+    };
 
     // Alice's public key
     let y = g.modpow(&x, &p);
