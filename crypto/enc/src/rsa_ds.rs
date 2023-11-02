@@ -1,12 +1,12 @@
-use std::{borrow::Cow, path::Path, fs};
+use std::{borrow::Cow, fs, path::Path};
 
 use num::One;
-use num_primes::{Generator, BigUint};
+use num_primes::{BigUint, Generator};
 use sha2::{Digest, Sha512};
 
 use crate::util::{gcd, num_inv_by_mod};
 
-pub fn init(bits: usize) -> (BigUint, BigUint, BigUint) {
+pub fn init(bits: usize) -> (BigUint, BigUint, BigUint, BigUint, BigUint) {
     let p = Generator::new_prime(bits);
     let q = Generator::new_prime(bits);
     let n = &p * &q;
@@ -22,7 +22,33 @@ pub fn init(bits: usize) -> (BigUint, BigUint, BigUint) {
 
     let c = num_inv_by_mod(&d, &fi);
 
-    (c, d, n)
+    (c, d, n, p, q)
+}
+
+pub fn init_many_c_d(bits: usize, num_cd: usize) -> (Vec<BigUint>, Vec<BigUint>, BigUint, BigUint, BigUint) {
+    let p = Generator::new_prime(bits);
+    let q = Generator::new_prime(bits);
+    let n = &p * &q;
+
+    let fi = (&p - BigUint::one()) * (&q - BigUint::one());
+
+    let mut vec_c = Vec::with_capacity(num_cd);
+    let mut vec_d = Vec::with_capacity(num_cd);
+
+    for _ in 1..num_cd {
+        let c = loop {
+            let c = Generator::new_uint(bits);
+            if gcd(&fi, &c) == BigUint::one() {
+                break c;
+            }
+        };
+
+        let d = num_inv_by_mod(&c, &fi);
+        vec_c.push(c);
+        vec_d.push(d);
+    }
+
+    (vec_c, vec_d, p, q, n)
 }
 
 fn sign(message: &[u8], c: &BigUint, n: &BigUint) -> BigUint {

@@ -130,6 +130,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "digital_money"
+version = "0.1.0"
+dependencies = [
+ "enc",
+ "num",
+ "num-bigint-dig",
+ "num-primes",
+]
+
+[[package]]
 name = "enc"
 version = "0.1.0"
 dependencies = [
@@ -231,6 +241,16 @@ name = "memchr"
 version = "2.6.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f665ee40bc4a3c5590afb1e9677db74a508659dfd71e126420da8274909a0167"
+
+[[package]]
+name = "mental_poker"
+version = "0.1.0"
+dependencies = [
+ "enc",
+ "num",
+ "num-bigint-dig",
+ "num-primes",
+]
 
 [[package]]
 name = "miniz_oxide"
@@ -464,6 +484,10 @@ checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
 dependencies = [
  "getrandom",
 ]
+
+[[package]]
+name = "rpc"
+version = "0.1.0"
 
 [[package]]
 name = "rustc-demangle"

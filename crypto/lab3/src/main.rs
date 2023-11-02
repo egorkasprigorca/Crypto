@@ -6,7 +6,7 @@ use enc::{rsa_ds, elgamal_ds, dsa_ru, dsa_us};
 fn do_rsa_ds(dir: &String) {
     let start = Instant::now();
 
-    let (c, d, n) = rsa_ds::init(1024);
+    let (c, d, n, _, _) = rsa_ds::init(1024);
     rsa_ds::sign_file(
         dir.to_owned() + "logo.jpg",
         dir.to_owned() + "sign_rsa",

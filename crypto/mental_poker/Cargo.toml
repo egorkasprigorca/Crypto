@@ -1,5 +1,5 @@
 [package]
-name = "lab3"
+name = "mental_poker"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +7,7 @@ edition = "2021"
 
 [dependencies]
 enc = { path = "../enc" }
+
+num-primes = "0.3.0"
+num-bigint-dig = "0.8.4"
+num = "0.4.1"
