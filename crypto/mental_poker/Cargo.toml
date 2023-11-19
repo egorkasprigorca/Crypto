@@ -11,3 +11,6 @@ enc = { path = "../enc" }
 num-primes = "0.3.0"
 num-bigint-dig = "0.8.4"
 num = "0.4.1"
+rand = "0.8.5"
+num-bigint = "0.4.4"
+num-traits = "0.2.17"

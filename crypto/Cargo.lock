@@ -248,8 +248,11 @@ version = "0.1.0"
 dependencies = [
  "enc",
  "num",
+ "num-bigint 0.4.4",
  "num-bigint-dig",
  "num-primes",
+ "num-traits",
+ "rand 0.8.5",
 ]
 
 [[package]]
