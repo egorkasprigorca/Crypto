@@ -1,4 +1,4 @@
-use std::{borrow::Cow, fs, path::Path};
+use std::{fs, path::Path};
 
 use num::One;
 use num_primes::{BigUint, Generator};
@@ -15,7 +15,7 @@ pub fn init(bits: usize) -> (BigUint, BigUint, BigUint, BigUint, BigUint) {
 
     let d = loop {
         let d = Generator::new_uint(bits);
-        if gcd(&fi, &d) == BigUint::one() {
+        if gcd(&fi, &d) == BigUint::one() && &d < &fi {
             break d;
         }
     };
