@@ -5,5 +5,5 @@ members = [
     "lab3",
     "digital_money",
     "mental_poker",
-    "rpc"
+    "rgr"
 ]
